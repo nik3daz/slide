@@ -5,6 +5,12 @@
       body {
         margin: 0px;
         padding: 0px;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        background: rgba(150, 197, 178, 0.52);
       }
     </style>
     <script src="kinetic-v3.9.8.js"></script>
@@ -29,14 +35,12 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
         })(); 
-        /*
-        */
     </script>
 
 
   </head>
   <body>
-	<div id="error">This browser is not supported or javascript is turned off</div>
+	<div id="error"></div>
     <div id="container"></div>
 
     <script>
